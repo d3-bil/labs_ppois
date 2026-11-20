@@ -24,11 +24,11 @@ bool Point3D::operator!=(const Point3D& other) const {
 Vector3D::Vector3D(const Point3D& start_point, const Point3D& end_point)
     : start_(start_point), end_(end_point) {}
 
-Point3D Vector3D::start_point() const {
+const Point3D& Vector3D::start_point() const {
     return start_;
 }
 
-Point3D Vector3D::end_point() const {
+const Point3D& Vector3D::end_point() const {
     return end_;
 }
 

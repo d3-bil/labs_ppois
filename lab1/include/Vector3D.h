@@ -39,10 +39,10 @@ public:
     ~Vector3D() = default;
 
     /// @brief Возвращает начальную точку вектора.
-    Point3D start_point() const;
+    const Point3D& start_point() const;
 
     /// @brief Возвращает конечную точку вектора.
-    Point3D end_point() const;
+    const Point3D& end_point() const;
 
     /// @brief Вычисляет евклидову длину вектора.
     double length() const;
